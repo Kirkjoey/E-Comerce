@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int MetodoPago::idMetodoPago;
+int MetodoPago::contadorMetodoPago;
 
 #pragma region MetodosPrivados
 
@@ -32,7 +32,7 @@ MetodoPago::MetodoPago()
 
 MetodoPago::MetodoPago(string cta)
 {
-	idMetodoPago++;
+	idMetodoPago = ++contadorMetodoPago;
 	numCuenta = cta;
 	CLABE = GenerarCLABE();
 	CLABE.insert(6, numCuenta.substr(0, 11));

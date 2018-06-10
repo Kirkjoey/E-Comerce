@@ -5,22 +5,19 @@
 class MetodoPago
 {
 private:
-	static int idMetodoPago;
+	static int contadorMetodoPago;
+	int idMetodoPago;
 	std::string numCuenta;
 	std::string CLABE;
 
-#pragma region MetodosPrivados
-	
 	std::string GenerarCLABE();
-
-#pragma endregion
 
 public:
 #pragma region Constructores
 
 	MetodoPago();
 	MetodoPago(std::string);
-	~MetodoPago();
+	//~MetodoPago();
 	virtual ~MetodoPago();
 
 #pragma endregion
@@ -36,7 +33,7 @@ public:
 #pragma endregion
 
 #pragma region Metodos
+	bool ValidarCreditoCuenta();
 #pragma endregion
 
 };
-

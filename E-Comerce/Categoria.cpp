@@ -1,13 +1,16 @@
 #include "stdafx.h"
 #include "Categoria.h"
-int Categoria::iDCategoria
+
+using namespace std;
+
+int Categoria::contC
 
 Categoria::Categoria() {
 	nombreCategoria = "";
 }
 
 Categoria::Categoria(string _nombreCategoria) {
-	iDCategoria++;
+	iDCategoria = ++contC;
 	nombreCategoria = _nombreCategoria;
 }
 

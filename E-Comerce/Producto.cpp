@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "Producto.h"
-int Producto::iDProducto;
+
+using namespace std;
+
+int Producto::contP;
 
 Producto::Producto() {
 	nombreProducto = "";
@@ -9,7 +12,7 @@ Producto::Producto() {
 }
 
 Producto::Producto(string _nombreProducto, string _descripcion, int _cveCategoria) {
-	iDProducto++;
+	iDProducto = ++contP;
 	nombreProducto = _nombreProducto;
 	descripcion = _descripcion;
 	cveCategoria = _cveCategoria;

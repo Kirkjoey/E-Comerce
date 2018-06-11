@@ -2,7 +2,8 @@
 #include <string>
 class Categoria{
 private:
-	static int iDCategoria;
+	static int contC;
+	int iDCategoria;
 	string nombreCategoria;
 public:
 	Categoria();

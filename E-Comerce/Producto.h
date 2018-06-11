@@ -3,7 +3,8 @@
 class Producto
 {
 private:
-	static int iDProducto;
+	static int contP;
+	int iDProducto;
 	string nombreProducto;
 	string descripcion;
 	int cveCategoria;
